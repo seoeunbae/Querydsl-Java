@@ -10,12 +10,13 @@ import javax.persistence.PersistenceContext;
 import java.util.List;
 @SpringBootTest
 @Transactional
-@Commit
+//@Commit
 public class MemberTest {
+
+//    @Autowired
     @PersistenceContext
     EntityManager em;
     @Test
-
     public void testEntity() {
         Team teamA = new Team("teamA");
         Team teamB = new Team("teamB");
